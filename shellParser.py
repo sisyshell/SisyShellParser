@@ -23,6 +23,3 @@ class shellParser():
   def commandRead(self, command):
     self.commandResult = os.popen(command).read();
     return self.commandResult
-	  
-  def getWindowsEventLog(self, diary):
-    self.commandRead('Powershell Get-WinEvent Microsoft-Windows-WLAN-AutoConfig/Operational')
